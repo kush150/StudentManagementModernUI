@@ -1,0 +1,10 @@
+body { font-family: 'Poppins', sans-serif; }
+.brand-mark { background: linear-gradient(135deg, #0d6efd, #66b2ff); color: white; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 10px; font-weight: 700; }
+.brand-text { font-weight: 600; color: #0f1724; }
+.navbar-white { background: #fff; }
+.card { border-radius: 12px; }
+.table thead th { border-bottom: 0; }
+.table-hover tbody tr:hover { background: rgba(13,110,253,0.04); }
+.btn-primary { box-shadow: 0 6px 16px rgba(13,110,253,0.08); }
+input.form-control { border-radius: 8px; }
+@media (max-width: 767px) { .brand-text { display: none; } }
