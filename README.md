@@ -19,26 +19,24 @@ It allows you to **add**, **view**, **edit**, and **delete** student records eas
 
 ## 🏗️ Project Structure
 
+
+
 StudentManagement/
-├── WEB-INF/
-│   ├── web.xml
-│   ├── classes/
-│   │   ├── com/student/controller/RegistrationController.class
-│   │   ├── com/student/controller/EditStudent.class
-│   │   ├── com/student/controller/DeleteStudent.class
-│   │   ├── com/student/controller/SaveEditedStudent.class
-│   │   ├── com/student/controller/ViewStudents.class
-│   │   ├── com/student/dao/*.class
-│   │   └── com/student/model/*.class
-│   └── lib/
-│       └── mysql-connector-java-8.0.xx.jar
 ├── index.jsp
 ├── home.jsp
 ├── NewFile.jsp
-└── assets/
-    └── css/styles.css
+├── assets/
+│ └── css/styles.css
+└── WEB-INF/
+├── web.xml
+├── classes/
+│ ├── com/student/controller/.class
+│ ├── com/student/dao/.class
+│ └── com/student/model/*.class
+└── lib/
+└── mysql-connector-java-8.0.xx.jar
 
-    
+
 ---
 
 ## 🗄️ Database Setup (MySQL)
@@ -57,13 +55,14 @@ CREATE TABLE student (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-**##  Optional Sample Data**
+Optional Sample Data
 INSERT INTO student (name, email, course, phone)
 VALUES
 ('Rahul Sharma', 'rahul@example.com', 'BCA', '9876543210'),
 ('Priya Singh', 'priya@example.com', 'MBA', '9123456789');
 
-⚙️ Backend Configuration
+
+**** ##⚙️ Backend Configuration****
 DB Connection (DBConnection.java)
 private static final String URL = "jdbc:mysql://localhost:3306/student_management";
 private static final String USER = "root";          // your MySQL username
