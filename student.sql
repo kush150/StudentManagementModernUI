@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS student_management;
+USE student_management;
+
+CREATE TABLE student (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL UNIQUE,
+  course VARCHAR(100) NOT NULL,
+  phone VARCHAR(15),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
